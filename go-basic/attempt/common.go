@@ -2,6 +2,10 @@ package attempt
 
 import "fmt"
 
+func PrintOne() {
+	fmt.Println("hello, world")
+}
+
 func Foo() {
 	defer func() {
 		if err := recover(); err != nil {

@@ -3,6 +3,7 @@ package main
 import (
 	"net/http"
 
+	"github.com/changbaihe/go-manual/go-basic/attempt"
 	"github.com/gin-gonic/gin"
 )
 
@@ -21,6 +22,7 @@ var albums = []album{
 
 func main() {
 	// gin.SetMode(gin.ReleaseMode)
+	attempt.PrintOne()
 	router := gin.Default()
 	router.GET("/albums", getAlbums)
 	router.POST("/albums", postAlbums)
