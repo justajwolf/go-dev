@@ -14,7 +14,29 @@ func TestRob(t *testing.T) {
 	fmt.Printf("输出：%+v\n", Rob(arr))
 }
 
+// 循环写法(正解，加result缓存，使用空间换取时间)
 func Rob(nums []int) int {
+	length := len(nums)
+	result := make([]int, length)
+	copy(result, nums)
+	max := 0
+	for i := 0; i < length; i++ {
+		for j := i + 2; j < length; j++ {
+			sum := nums[j] + result[i]
+			if sum > result[j] {
+				result[j] = sum
+			}
+		}
+		if result[i] > max {
+			max = result[i]
+		}
+	}
+	fmt.Println(result)
+	return max
+}
+
+// 递归写法(超时，未使用缓存，导致重复计算，耗费时间)
+func Rob1(nums []int) int {
 	length := len(nums)
 	switch length {
 	case 0:
