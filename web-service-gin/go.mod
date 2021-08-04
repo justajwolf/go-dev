@@ -8,3 +8,5 @@ require (
 )
 
 replace github.com/changbaihe/go-manual/go-basic => ../go-basic
+
+replace github.com/changbaihe/go-manual/web-service-gin => ./
