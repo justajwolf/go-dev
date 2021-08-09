@@ -1,4 +1,4 @@
-module github.com/changbaihe/go-manual/web-service-bin
+module github.com/changbaihe/go-manual/web-service-gin
 
 go 1.16
 
