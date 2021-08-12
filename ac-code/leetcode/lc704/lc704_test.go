@@ -1,4 +1,4 @@
-package leetcode
+package lc704
 
 import (
 	"fmt"

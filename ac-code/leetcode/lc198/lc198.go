@@ -1,4 +1,4 @@
-package leetcode
+package lc198
 
 /*
 题目198：打家劫舍

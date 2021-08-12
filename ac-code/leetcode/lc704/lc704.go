@@ -1,4 +1,4 @@
-package leetcode
+package lc704
 
 /*
 题目704：二分查找

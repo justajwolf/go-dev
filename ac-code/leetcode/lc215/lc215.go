@@ -1,4 +1,4 @@
-package leetcode
+package lc215
 
 import "github.com/changbaihe/go-manual/ac-code/sorts"
 
