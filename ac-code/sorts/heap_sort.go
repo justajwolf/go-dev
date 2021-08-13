@@ -4,7 +4,7 @@ package sorts
 func HeapSortAsc(arr []int) []int {
 	length := len(arr)
 	// 初始化构建大顶堆
-	for i := length / 2; i >= 0; i-- {
+	for i := (length - 1) / 2; i >= 0; i-- {
 		HeapAdjustMax(&arr, i, length)
 	}
 	// 循环调整堆顶，
@@ -18,7 +18,7 @@ func HeapSortAsc(arr []int) []int {
 // 调整大顶堆
 func HeapAdjustMax(arr *[]int, k, length int) {
 	old_parent := (*arr)[k]
-	for i := k * 2; i < length; i *= 2 {
+	for i := k*2 + 1; i < length; i = i*2 + 1 {
 		if i+1 < length && (*arr)[i] < (*arr)[i+1] {
 			i++
 		}
@@ -36,7 +36,7 @@ func HeapAdjustMax(arr *[]int, k, length int) {
 func HeapSortDesc(arr []int) []int {
 	length := len(arr)
 	// 初始化构建大顶堆
-	for i := length / 2; i >= 0; i-- {
+	for i := (length - 1) / 2; i >= 0; i-- {
 		HeapAdjustMin(&arr, i, length)
 	}
 	// 循环调整堆顶，
@@ -50,7 +50,7 @@ func HeapSortDesc(arr []int) []int {
 // 调整小顶堆
 func HeapAdjustMin(arr *[]int, k, length int) {
 	old_parent := (*arr)[k]
-	for i := k * 2; i < length; i *= 2 {
+	for i := k*2 + 1; i < length; i = i*2 + 1 {
 		if i+1 < length && (*arr)[i] > (*arr)[i+1] {
 			i++
 		}
