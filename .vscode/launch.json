@@ -9,13 +9,17 @@
       "type": "go",
       "request": "launch",
       "mode": "auto",
-      "program": "${file}"
+      "showGlobalVariables": true,
+      "internalConsoleOptions": "openOnSessionStart",
+      "program": "${file}",
     },
     {
       "name": "attach-server",
       "type": "go",
       "request": "attach",
       "mode": "local",
+      "showGlobalVariables": true,
+      "internalConsoleOptions": "openOnSessionStart",
       "processId": "${command:pickGoProcess}",
     },
     {
@@ -25,7 +29,9 @@
       "mode": "remote",
       "remotePath": "${workspaceFolder}",
       "port": 8080,
-      "host": "127.0.0.1"
+      "host": "127.0.0.1",
+      "showGlobalVariables": true,
+      "internalConsoleOptions": "openOnSessionStart",
     }
   ]
 }
