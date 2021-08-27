@@ -1,8 +1,8 @@
-package stdnet
+package main
 
 import "net/http"
 
-func http1() {
+func main() {
 	http.Handle("/", http.FileServer(http.Dir(".")))
 	http.ListenAndServe(":8080", nil)
 }

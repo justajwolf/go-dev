@@ -1,4 +1,4 @@
-package stdos
+package main
 
 import (
 	"bufio"
@@ -7,7 +7,7 @@ import (
 	"strings"
 )
 
-func cli() {
+func main() {
 	inReader := bufio.NewReader(os.Stdin)
 	fmt.Println("please input your name:")
 	in, err := inReader.ReadString('\n')
