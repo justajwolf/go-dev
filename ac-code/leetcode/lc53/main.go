@@ -1,12 +1,24 @@
-package lc53
+package main
 
-import "sync"
+import (
+	"fmt"
+	"sync"
+)
 
 /*
-题目215：数组中的第K个最大元素
-	给定整数数组 nums 和整数 k，请返回数组中第 k 个最大的元素。
-	请注意，你需要找的是数组排序后的第 k 个最大的元素，而不是第 k 个不同的元素。
+题目53：最大子序和
+	给定一个整数数组 nums ，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和。
 */
+
+func main() {
+	fmtMaxSubArray([]int{-2, 1, -3, 4, -1, 2, 1, -5, 4})
+	fmtMaxSubArray([]int{5, 4, -1, 7, 8})
+	fmtMaxSubArray([]int{1, 2})
+}
+func fmtMaxSubArray(arr []int) {
+	fmt.Printf("输入：%+v\n", arr)
+	fmt.Printf("输出：%+v\n", MaxSubArray(arr))
+}
 
 func MaxSubArray(nums []int) int {
 	_, _, max := FindMaxSubArray(nums, 0, len(nums)-1)
