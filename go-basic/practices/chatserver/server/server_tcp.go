@@ -6,7 +6,7 @@ import (
 	"net"
 	"sync"
 
-	"github.com/changbaihe/go-manual/go-basic/practices/chatserver/protocol"
+	"github.com/justajwolf/go-dev/go-basic/practices/chatserver/protocol"
 )
 
 type client struct {

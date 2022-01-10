@@ -3,13 +3,13 @@ package main
 import (
 	"log"
 
-	"github.com/changbaihe/go-manual/go-basic/practices/protobuf/pbs"
+	"github.com/justajwolf/go-dev/go-basic/practices/protobuf/pbs"
 	"google.golang.org/protobuf/proto"
 )
 
 func main() {
 	u := &pbs.UserInfo{
-		Message: *proto.String("changbaihenx"),
+		Message: *proto.String("justajwolfnx"),
 		Length:  *proto.Int32(12),
 	}
 	data, err := proto.Marshal(u)

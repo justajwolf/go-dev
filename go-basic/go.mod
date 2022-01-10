@@ -1,8 +1,8 @@
-module github.com/changbaihe/go-manual/go-basic
+module github.com/justajwolf/go-dev/go-basic
 
 go 1.16
 
-replace github.com/changbaihe/go-manual/go-basic => ./
+replace github.com/justajwolf/go-dev/go-basic => ./
 
 require (
 	github.com/gin-gonic/gin v1.7.4 // indirect

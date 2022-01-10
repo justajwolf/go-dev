@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/changbaihe/go-manual/go-basic/attempt"
-	"github.com/changbaihe/go-manual/web-service-gin/albums"
+	"github.com/justajwolf/go-dev/go-basic/attempt"
+	"github.com/justajwolf/go-dev/web-service-gin/albums"
 	"github.com/gin-gonic/gin"
 )
 

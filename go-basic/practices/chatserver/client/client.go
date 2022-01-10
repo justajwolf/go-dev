@@ -1,6 +1,6 @@
 package client
 
-import "github.com/changbaihe/go-manual/go-basic/practices/chatserver/protocol"
+import "github.com/justajwolf/go-dev/go-basic/practices/chatserver/protocol"
 
 type Client interface {
 	Dial(addrss string) error

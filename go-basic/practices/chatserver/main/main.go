@@ -6,8 +6,8 @@ import (
 	"log"
 	"time"
 
-	"github.com/changbaihe/go-manual/go-basic/practices/chatserver/client"
-	"github.com/changbaihe/go-manual/go-basic/practices/chatserver/server"
+	"github.com/justajwolf/go-dev/go-basic/practices/chatserver/client"
+	"github.com/justajwolf/go-dev/go-basic/practices/chatserver/server"
 )
 
 var address = flag.String("address", "127.0.0.1:3333", "address of server")

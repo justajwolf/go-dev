@@ -92,7 +92,7 @@ $ git config --local url."https://<githab-token>:x-oauth-basic@github.com/".inst
 
 # 创建go项目
 
-参考[官方示例](https://golang.org/doc/tutorial/web-service-gin)，以下示例repo，见[仓库](https://github.com/changbaihe/go-manual/tree/master/web-service-gin)
+参考[官方示例](https://golang.org/doc/tutorial/web-service-gin)，以下示例repo，见[仓库](https://github.com/justajwolf/go-dev/tree/master/web-service-gin)
 - 切换到~目录创建，demo文件夹
 
 ```bash

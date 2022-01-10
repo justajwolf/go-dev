@@ -6,7 +6,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/changbaihe/go-manual/go-basic/practices/grpc/pbs"
+	"github.com/justajwolf/go-dev/go-basic/practices/grpc/pbs"
 	"google.golang.org/grpc"
 )
 
@@ -37,14 +37,14 @@ func Client(addr string) {
 	defer conn.Close()
 
 	c := pbs.NewHelloServerClient(conn)
-	r1, err := c.SayHello(context.Background(), &pbs.HelloRequest{Name: "changbaihe"})
+	r1, err := c.SayHello(context.Background(), &pbs.HelloRequest{Name: "justajwolf"})
 	if err != nil {
 		fmt.Println("cloud not get hello server ..", err)
 		return
 	}
 	fmt.Println("HelloServer resp: ", r1.Message)
 
-	r2, err := c.GetHelloMsg(context.Background(), &pbs.HelloRequest{Name: "changbaihe"})
+	r2, err := c.GetHelloMsg(context.Background(), &pbs.HelloRequest{Name: "justajwolf"})
 	if err != nil {
 		fmt.Println("cloud not get hello msg ..", err)
 		return
