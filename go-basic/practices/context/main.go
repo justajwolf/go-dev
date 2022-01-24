@@ -9,9 +9,9 @@ import (
 func main() {
 	t := 4
 	// TestChanClose(t)
-	TestWCancel(t)
+	// TestWCancel(t)
 	// TestWDeadline(t)
-	// TestWTimeout(t)
+	TestWTimeout(t)
 }
 
 func TestChanClose(t int) {
